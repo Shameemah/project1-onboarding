@@ -179,3 +179,35 @@ textarea {
 }
 
 /* end normalize.css form styles */
+
+/* ===== BASE STYLES ===== */
+/* Setting type to a major third modular scale - 4:5
+http://www.modularscale.com/?18&px&1.2&web&text */
+
+html {
+  font-size: 1.125em;  /* 18px */
+  line-height: 1.2em;  /* 21.6px @ 18px = 1.2222 */
+  font-family: "Gotham", sans-serif;
+}
+
+h1 {
+  font-size: 1.5em; /*27px@18px*/
+	line-height: 1.2em; /*32.4px @ 27px */
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.222em; /*22px@18px*/
+	line-height: 1.2em; /*26.4px @ 22px */
+	text-transform: uppercase;
+}
+
+h3 {
+	text-transform: uppercase;
+}
+
+/* ===== MODUlAR STYLES ===== */
+
+
+/* ===== LAYOUT STYLES ===== */
+
