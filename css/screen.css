@@ -206,25 +206,27 @@ h3 {
 	text-transform: uppercase;
 }
 
-form {
-	position: relative;
-}
-
 label, 
 input {
 	box-sizing: border-box;
 	width: 100%;
-  display: inline-block;
+  display: block;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
-
-
-
 /* ===== MODUlAR STYLES ===== */
 
 
 /* ===== LAYOUT STYLES ===== */
+body {
+	padding: 1.2em 0.916em; /* 16.5px */
+}
 
+h1 {
+	padding-bottom: 0.229em;
+}
 
+h2 {
+	padding-bottom: 0.916em;
+}
