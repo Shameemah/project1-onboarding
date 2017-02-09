@@ -206,8 +206,25 @@ h3 {
 	text-transform: uppercase;
 }
 
+form {
+	position: relative;
+}
+
+label, 
+input {
+	box-sizing: border-box;
+	width: 100%;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
 /* ===== MODUlAR STYLES ===== */
 
 
 /* ===== LAYOUT STYLES ===== */
+
 
