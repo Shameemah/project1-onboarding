@@ -227,6 +227,10 @@ h1 {
 	padding-bottom: 0.229em;
 }
 
-h2 {
-	padding-bottom: 0.916em;
+h3 {
+	padding-top: 0.458em;
+}
+
+h3:first-child {
+	padding-top: 0.916em;
 }
