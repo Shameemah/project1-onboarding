@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ASO-IIT</title>
+  <title>Logophiles Club</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="/css/screen.css" />
@@ -10,48 +10,33 @@
 
 <body>
 	<header>
-		<h1>African student organization</h1>
-		<h2>Illinois Tech Chapter</h2>
+		<h1>LOGOPHILES</h1>
+		<h2>A literary club</h2>
 	</header>
 	
 	<main>
-		<section id="about-us">
-			<h3>About us</h3>
-			<p>We are the African students at Illinois Tech. We are committed to enlightening the 
-			Illinois Tech Campus, and chicago at large,  about the rich cultures of the different 
-			nations that make up our continent. It is also our goal to provide a community where 
-			the African students at Illinois Tech can feel at home. We are family. ASO is an 
-			inclusive organization - every and any one are welcome to join. We welcome the world.
-			</p> 
-		</section>
-		<section id="mission">
-			<h3>Mission</h3>
+		<section id="description">
 			<ul>
-				<li>To share the rich African heritage through community service, cultural events, 
-				and collaborations with other organizations.</li>
-			</ul>
-		</section>
-		<section id="vision">
-			<h3>Vision</h3>
-			<ul>
-				<li>To promote Africa by empowering ethical and global leadership.</li>
+				<li> Sign up to join our club and receive weekly newsletters, customized to fit 
+				your level of experience.<li>
 			</ul>
 		</section>
 		<section id="register">
 			<h3>Become a member</h3>
-			<form method="get" action=#null>
+			<form method="post" action=#null>
 				<ol>
-					<li id="input-name">
-						<label for="name">Full name</label>
-						<input type="text" name="name" id="name" autocomplete="name" placeholder="Jane Doe" />
+					<li id="input-email">	
+					<label for="email">Email</label>
+						<input type="email" name="email" id="email" autocomplete="email" placeholder="you@example.com" pattern="^.+@.+$"/>
 					</li>
-					<li id="input-email">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" autocomplete="email" placeholder="you@example.com" />
-					</li>
-					<li id="input-anumber">
-						<label for="anumber">A-number</label>
-						<input type="number" name="anumber" id="anumber" placeholder="21212121" />
+					<li id="experience">
+						<legend>Level of Writing Experience</legend>
+						<input type="radio" name="beginner" id="beginner" />
+						<label for="beginner" class="radio-label" >Beginner</label>
+						<input type="radio" name="intermediate" id="intermediate" />
+						<label for="intermediate" class="radio-label" >Intermediate</label>
+						<input type="radio" name="advanced" id="advanced" />
+						<label for="advanced" class="radio-label" >Advanced</label>						
 					</li>
 					<li id="input-submit">
 						<input type="submit" name="submit" id="submit" value="Join!" />
