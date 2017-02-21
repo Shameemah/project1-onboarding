@@ -215,13 +215,25 @@ input {
   font-size: inherit;
   line-height: inherit;
 }
+
+input[type=radio] {
+	display: inline-block;
+	margin-left: -47.5%;
+}
+
+.radio-label {
+	display: inline;
+	margin-left: -47.5%;
+	margin-right: 47.5%;
+}
+
 /* ===== MODUlAR STYLES ===== */
 
 
 /* ===== LAYOUT STYLES ===== */
+/* 
 body {
-	padding: 1.2em 0.916em; /* 16.5px */
-}
+	padding: 1.2em 0.916em; 16.5px}
 
 h1 {
 	padding-bottom: 0.229em;
@@ -234,3 +246,4 @@ h3 {
 h3:first-child {
 	padding-top: 0.916em;
 }
+ */
