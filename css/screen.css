@@ -185,20 +185,17 @@ textarea {
 http://www.modularscale.com/?18&px&1.2&web&text */
 
 html {
-  font-size: 1.125em;  /* 18px */
-  line-height: 1.2em;  /* 21.6px @ 18px = 1.2222 */
-  font-family: "Gotham", sans-serif;
+	font-size: 22.5px;
+	line-height: 28px;
 }
 
 h1 {
-  font-size: 1.5em; /*27px@18px*/
-	line-height: 1.2em; /*32.4px @ 27px */
-	text-transform: uppercase;
+	font-size: 35.156px;
+	line-height: 56px;
 }
 
 h2 {
-	font-size: 1.222em; /*22px@18px*/
-	line-height: 1.2em; /*26.4px @ 22px */
+	font-size: 28.125px;
 	text-transform: uppercase;
 }
 
@@ -216,6 +213,7 @@ input {
   line-height: inherit;
 }
 
+/* ===== MODUlAR STYLES ===== */
 input[type=radio] {
 	display: inline-block;
 	margin-left: -47.5%;
@@ -227,23 +225,9 @@ input[type=radio] {
 	margin-right: 47.5%;
 }
 
-/* ===== MODUlAR STYLES ===== */
-
-
 /* ===== LAYOUT STYLES ===== */
-/* 
-body {
-	padding: 1.2em 0.916em; 16.5px}
-
-h1 {
-	padding-bottom: 0.229em;
+#description {
+	padding-bottom: 28px;
 }
 
-h3 {
-	padding-top: 0.458em;
-}
 
-h3:first-child {
-	padding-top: 0.916em;
-}
- */
