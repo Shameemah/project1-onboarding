@@ -13,16 +13,13 @@
 		<h1>LOGOPHILES</h1>
 		<h2>A literary club</h2>
 	</header>
-	
 	<main>
-		<section id="description">
-			<ul>
-				<li> Sign up to join our club and receive weekly newsletters, customized to fit 
-				your level of experience.<li>
-			</ul>
-		</section>
+		<ul>
+			<li id="description"> For the lovers of literature, those who seek a safe space to express themselves 
+			through writing, those willing to learn. <li>
+		</ul>
 		<section id="register">
-			<h3>Become a member</h3>
+			<h3>Become a member!</h3>
 			<form method="post" action=#null>
 				<ol>
 					<li id="input-email">	
@@ -30,13 +27,13 @@
 						<input type="email" name="email" id="email" autocomplete="email" placeholder="you@example.com" pattern="^.+@.+$"/>
 					</li>
 					<li id="experience">
-						<legend>Level of Writing Experience</legend>
+						<label for="experience">Level of Writing Experience</label>
 						<input type="radio" name="experience" id="beginner" value="beginner" />
 						<label for="beginner" class="radio-label" >Beginner</label>
-						<input type="radio" name="experience" id="intermediate" />
-						<label for="intermediate" class="radio-label" value="intermediate" >Intermediate</label>
-						<input type="radio" name="experience" id="advanced" />
-						<label for="advanced" class="radio-label" value="advanced" >Advanced</label>						
+						<input type="radio" name="experience" id="intermediate" value="intermediate" />
+						<label for="intermediate" class="radio-label" >Intermediate</label>
+						<input type="radio" name="experience" id="advanced" value="advanced" />
+						<label for="advanced" class="radio-label" >Advanced</label>						
 					</li>
 					<li id="input-submit">
 						<input type="submit" name="submit" id="submit" value="Join!" />
