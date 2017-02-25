@@ -211,12 +211,20 @@ input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  border: 0;
+  margin: 0;
+  padding: 14px;
+  background: red;
 }
 
 /* ===== MODUlAR STYLES ===== */
 input[type=radio] {
 	display: inline-block;
 	margin-left: -47.5%;
+}
+
+form li {
+	margin-bottom: 28px;
 }
 
 .radio-label {
