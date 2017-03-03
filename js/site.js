@@ -31,4 +31,14 @@ jQuery(function($) {
 			$('input[type="email"]').removeClass('email-active');
 		}
   });
+  
+  $( "#register-form" ).submit(function( event ) {
+  	event.preventDefault();
+  	$("#submit").remove();
+  	$("form").remove();
+	 	$('h3').text("Thank you!");
+	 	$('h3').css('background-color', 'rgba(170, 102, 68, 0.6)');
+	 	$('#register').append('<ul><li id="thankyou-message">We are so happy to have you :D</li></ul>');
+	 	$('#thankyou-message').addClass('FontBulge');
+	});
 });
