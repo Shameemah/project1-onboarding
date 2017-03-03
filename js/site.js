@@ -45,15 +45,14 @@ jQuery(function($) {
 	
 	//function to show thank you message to user
 	function thankYouMessage() {
-		var message = 'Thank You';
-		var gratitude='<ul><li id="thankyou-message">We are so happy to have you :D</li></ul>';
+		var message = 'Thank You!';
+		var gratitude='<ul><li id="thankyou-message">You are officially a logophile :D</li></ul>';
 		$('h3').text(message);
 		$('h3').css('background-color', 'rgba(170, 102, 68, 0.6)');
 		$('#register').append(gratitude);
 		$('#thankyou-message').addClass('FontBulge');
 	}
 	
-	//function to reset forms
 	function resetForms() {
     document.forms['register-form'].reset();
 	}
