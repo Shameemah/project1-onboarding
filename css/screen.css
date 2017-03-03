@@ -185,19 +185,19 @@ textarea {
 http://www.modularscale.com/?18&px&1.2&web&text */
 
 html {
-	font-size: 22.5px;
-	line-height: 28px;
+	font-size: 1.406em; /*22.5px @ 16px */
+	line-height: 1.22em; /*28px @ 18px */
 	font-family: 'Helvetica Neue LT W01_35 Thin', Helvetica, Arial, sans-serif;
 }
 
 h1 {
-	font-size: 35.156px;
-	line-height: 56px;
+	font-size: 1.562em;/* 35.156px @ 22.5px*/
+	line-height: 1.593em; /*56px @ 35.156px*/
 	font-family: 'Helvetica Neue LT W01_55 Roman', Helvetica, Arial, sans-serif;
 }
 
 h2 {
-	font-size: 28.125px;
+	font-size: 1.25em; /* 28.125px @ 22.5px*/
 	text-transform: uppercase;
 	font-family: 'Helvetica Neue LT W01_41488878', Helvetica, Arial, sans-serif;
 }
@@ -217,34 +217,24 @@ input {
   line-height: inherit;
   border: 0;
   margin: 0;
-  padding: 14px;
+  padding: 0.622em; /* 14px @ 22.5px*/
+  background: red;
 }
 
 /* ===== MODUlAR STYLES ===== */
-input[type=radio] {
-	display: inline-block;
-	margin-left: -47.5%;
-}
-
 form li {
-	margin-bottom: 28px;
-}
-
-.radio-label {
-	display: inline;
-	margin-left: -47.5%;
-	margin-right: 47.5%;
+	margin-bottom: 1.244em; /* 28px @ 22.5px*/
 }
 
 /* ===== LAYOUT STYLES ===== */
 #description {
-	padding-bottom: 28px;
+	padding-bottom: 1.244em; /* 28px @ 22.5px*/
 }
 
 /* ===== STATE STYLES ===== */
 .hasjs input[type="submit"] {
 	position: absolute;
-	left: -100000px;
+	left: -444.44em; /* -10000px @ 22.5px */
 }
 
 .hasjs input[type="submit"].active {
