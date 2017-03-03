@@ -244,11 +244,28 @@ form li {
 
 input[type="email"] {
   border: 0.1em solid rgba(170, 102, 68, 0.1);
+  color:  #331111;
   background-color: white;
   -webkit-appearance: none;
   -moz-box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
   -webkit-box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
    box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
+}
+
+input[type="submit"] {
+ border: 0;
+ font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
+ background-color: rgba(170, 102, 68, 0.9);
+	-webkit-appearance: none;
+  -webkit-box-shadow: 0.05555em 0.05555em 0.05555em 0.025em #993311;
+  box-shadow: 0.05555em 0.05555em 0.05555em 0.025em  #993311;
+  -moz-box-shadow: 0.05555em 0.05555em 0.05555em 0.025em #993311;
+}
+
+input[type="submit"]:hover {
+  color: #ffeedd;
+  background-color: #993311;
+  box-shadow: none;
 }
 
 #register {
