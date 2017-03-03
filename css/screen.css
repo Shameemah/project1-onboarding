@@ -246,9 +246,9 @@ input[type="email"] {
   border: 0.1em solid rgba(170, 102, 68, 0.1);
   background-color: white;
   -webkit-appearance: none;
-  -moz-box-shadow: inset 0 0 0.5em rgba(170, 102, 68, 0.6);
-  -webkit-box-shadow: inset 0 0 0.5em rgba(170, 102, 68, 0.6);
-   box-shadow: inset 0 0 0.5em rgba(170, 102, 68, 0.6);
+  -moz-box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
+  -webkit-box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
+   box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
 }
 
 #register {
@@ -313,5 +313,9 @@ h3 {
 
 .hasjs #input-email label.email-active {
 	top: 0em;
+}
+
+.hasjs input[type="email"].email-active {
+	box-shadow: none;
 }
 
