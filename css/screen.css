@@ -188,10 +188,11 @@ html {
   font-size: 1.406em; /*22.5px @ 16px */
   line-height: 1.22em; /*28px @ 18px */
   font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 header {
-	background: url(../img/headerphoto-4377-60.jpg) #49311c;
+	background: url(../img/headerphoto-4493-10.jpg) #49311c;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -203,10 +204,14 @@ h1 {
   font-size: 1.562em;/* 35.156px @ 22.5px*/
   line-height: 1.593em; /*56px @ 35.156px*/
   font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
+  background-color: rgba(170, 102, 68, 0.3);
+  color: #ffeedd;
 }
 
 h2 {
   font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
+  background-color: rgba(170, 102, 68, 0.3);
+  color: #331111;
 }
 
 h3 {
@@ -249,6 +254,7 @@ h2 {
 }
 
 h3 {
+	padding-top: 0.6222em; /* 14px @ 22.5px*/
   padding-bottom: 0.6222em; /* 14px @ 22.5px*/
 }
 
