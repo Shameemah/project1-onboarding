@@ -9,10 +9,10 @@ Here is a preview of the website in use:
 ![preview](https://github.com/Shameemah/project1-onboarding/blob/master/img/giphy.gif)
 
 ## Tools Used:
-HTML5
-CSS
-JavaScript
-JQuery
-Affinity Designer
-Photoshop
+HTML5,
+CSS,
+JavaScript,
+JQuery,
+Affinity Designer,
+Photoshop,
 Adobe Color CC
