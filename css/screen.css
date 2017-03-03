@@ -190,6 +190,15 @@ html {
   font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;
 }
 
+header {
+	background: url(../img/headerphoto-4377-60.jpg) #49311c;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 h1 {
   font-size: 1.562em;/* 35.156px @ 22.5px*/
   line-height: 1.593em; /*56px @ 35.156px*/
@@ -219,7 +228,6 @@ input {
   font-size: inherit;
   line-height: inherit;
   border: 0;
-  background: red;
 }
 
 /* ===== MODUlAR STYLES ===== */
@@ -228,6 +236,8 @@ form li {
 }
 
 /* ===== LAYOUT STYLES ===== */
+
+
 h2 {
   padding-bottom: 1.244em; /* 28px @ 22.5px*/
 }
@@ -246,6 +256,7 @@ h3 {
 
 /* ===== STATE STYLES ===== */
 .hasjs input[type="submit"] {
+	transition: position 1s;
   position: absolute;
   left: -444.44em; /* -10000px @ 22.5px */
 }
