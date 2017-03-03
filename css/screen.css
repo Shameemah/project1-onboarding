@@ -206,8 +206,6 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em; /* 28.125px @ 22.5px*/
-  text-transform: uppercase;
   font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
 }
 
@@ -236,7 +234,15 @@ form li {
 }
 
 /* ===== LAYOUT STYLES ===== */
-
+header {
+  margin-top: -0.622em;
+  margin-left: -0.622em;
+  margin-right: -0.622em;
+  padding-top: 1.244em; /* 14px @ 22.5px*/
+  padding-left: 0.6222em; /* 14px @ 22.5px*/
+  padding-right: 0.6222em; /* 14px @ 22.5px*/
+  padding-bottom: 0.622em; /* 14px @ 22.5px*/
+}
 
 h2 {
   padding-bottom: 1.244em; /* 28px @ 22.5px*/
@@ -247,7 +253,7 @@ h3 {
 }
 
 #page {
-  padding: 0.6222em 0.6222em; /* 14px @ 22.5px*/
+  padding: 0.6222em; /* 14px @ 22.5px*/
 }
 
 #description {
