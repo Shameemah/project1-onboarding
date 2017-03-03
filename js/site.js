@@ -17,6 +17,7 @@ jQuery(function($) {
   
   $('#email').on('focus', function() {
   	$('#input-email label').addClass('email-active');
+  	$('input[type="email"]').addClass('email-active');
   });
   
   $('h3').on('click', function() {
@@ -27,6 +28,7 @@ jQuery(function($) {
   $('#email, h3').on('blur', function() {
 		if($('#email').val().length == 0) {
 			$('#input-email label').removeClass('email-active');
+			$('input[type="email"]').removeClass('email-active');
 		}
   });
 });
