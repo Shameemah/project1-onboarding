@@ -259,7 +259,11 @@ h3 {
 }
 
 .hasjs #input-email label {
-	top: 28px;
+	top: 1.244em; /* 28px @ 22.5px*/
 	position: absolute;
+}
+
+.hasjs #input-email label.email-active {
+	top: 0px;
 }
 
