@@ -245,7 +245,8 @@ form li {
   margin-bottom: 1.244em; /* 28px @ 22.5px*/
 }
 
-input[type="email"] {
+input[type="email"],
+input[type="text"] {
   border: 0.1em solid rgba(170, 102, 68, 0.1);
   background-color: white;
   -webkit-appearance: none;
@@ -319,21 +320,25 @@ h3 {
   position: static;
 }
 
-.hasjs #input-email {
+.hasjs #input-email,
+#input-name {
   position: relative;
 }
 
-.hasjs #input-email label {
+.hasjs #input-email label,
+#input-name label {
   transition: top 0.3s;
   top: 1.244em; /* 28px @ 22.5px*/
   position: absolute;
 }
 
-.hasjs #input-email label.email-active {
+.hasjs #input-email label.email-active,
+#input-name label.email-active {
   top: 0;
 }
 
-.hasjs input[type="email"].email-active {
+.hasjs input[type="email"].email-active,
+input[type="text"].email-active {
   box-shadow: none;
 }
 
