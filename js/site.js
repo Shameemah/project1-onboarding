@@ -14,4 +14,8 @@ jQuery(function($) {
    		$('#submit').removeClass('active');
    	}
   });
+  
+  $('#email').on('focus', function() {
+  	$('#input-email label').addClass('email-active');
+  });
 });
