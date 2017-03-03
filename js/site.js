@@ -19,7 +19,14 @@ jQuery(function($) {
   	$('#input-email label').addClass('email-active');
   });
   
-  $('#email').on('blur', function() {
-  	$('#input-email label').removeClass('email-active');
+  $('h3').on('click', function() {
+  	$('#input-email label').addClass('email-active');
+  	$('#email').focus();
+  });
+
+  $('#email, h3').on('blur', function() {
+		if($('#email').val().length == 0) {
+			$('#input-email label').removeClass('email-active');
+		}
   });
 });
