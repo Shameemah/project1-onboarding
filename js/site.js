@@ -27,22 +27,34 @@ jQuery(function($) {
     $('input[type="text"]').addClass('email-active');
   });
   
+  $('#number').on('click', function() {
+    $('#input-number label').addClass('email-active');
+    $('input[type="tel"]').focus();
+  });
+  
   $('h3').on('click', function() {
     $('#input-name label').addClass('email-active');
     $('#name').focus();
   });
 
-  $('#email, h3').on('blur', function() {
+  $('#email').on('blur', function() {
     if($('#email').val().length === 0) {
       $('#input-email label').removeClass('email-active');
       $('input[type="email"]').removeClass('email-active');
     }
   });
   
-  $('#name, h3').on('blur', function() {
+  $('#name').on('blur', function() {
     if($('#name').val().length === 0) {
       $('#input-name label').removeClass('email-active');
       $('input[type="text"]').removeClass('email-active');
+    }
+  });
+  
+  $('#number').on('blur', function() {
+    if($('#number').val().length === 0) {
+      $('#input-number label').removeClass('email-active');
+      $('input[type="tel"]').removeClass('email-active');
     }
   });
   
