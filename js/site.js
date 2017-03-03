@@ -6,10 +6,11 @@ jQuery(function($) {
   $('html').addClass('hasjs');
   
   //validate input
-  $('#email').on('keyup focus blur', function() {
-    var currentValue = $(this).val();
-    var validPattern = $(this).attr('pattern');
-    if (currentValue.match(validPattern)) {
+  $('#email, #name').on('keyup focus blur', function() {
+    var currentEmailVal = $('#email').val();
+    var currentNameVal = $('#name').val();
+    var validPattern = $('#email').attr('pattern');
+    if (currentEmailVal.match(validPattern) && currentNameVal.length !== 0) {
       $('#submit').addClass('active');
     } else {
       $('#submit').removeClass('active');
@@ -31,10 +32,15 @@ jQuery(function($) {
     $('#name').focus();
   });
 
-  $('#email, #name, h3').on('blur', function() {
+  $('#email, h3').on('blur', function() {
     if($('#email').val().length === 0) {
       $('#input-email label').removeClass('email-active');
       $('input[type="email"]').removeClass('email-active');
+    }
+  });
+  
+  $('#name, h3').on('blur', function() {
+    if($('#name').val().length === 0) {
       $('#input-name label').removeClass('email-active');
       $('input[type="text"]').removeClass('email-active');
     }
