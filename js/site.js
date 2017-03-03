@@ -5,6 +5,7 @@ jQuery(function($) {
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
   
+  //validate input
   $('#email').on('keyup focus blur', function() {
     var currentValue = $(this).val();
     var validPattern = $(this).attr('pattern');
@@ -20,15 +21,22 @@ jQuery(function($) {
     $('input[type="email"]').addClass('email-active');
   });
   
+  $('#name').on('focus', function() {
+    $('#input-name label').addClass('email-active');
+    $('input[type="text"]').addClass('email-active');
+  });
+  
   $('h3').on('click', function() {
-    $('#input-email label').addClass('email-active');
-    $('#email').focus();
+    $('#input-name label').addClass('email-active');
+    $('#name').focus();
   });
 
-  $('#email, h3').on('blur', function() {
+  $('#email, #name, h3').on('blur', function() {
     if($('#email').val().length === 0) {
       $('#input-email label').removeClass('email-active');
       $('input[type="email"]').removeClass('email-active');
+      $('#input-name label').removeClass('email-active');
+      $('input[type="text"]').removeClass('email-active');
     }
   });
   
