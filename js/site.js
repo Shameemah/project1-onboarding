@@ -18,4 +18,8 @@ jQuery(function($) {
   $('#email').on('focus', function() {
   	$('#input-email label').addClass('email-active');
   });
+  
+  $('#email').on('blur', function() {
+  	$('#input-email label').removeClass('email-active');
+  });
 });
