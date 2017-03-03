@@ -193,7 +193,7 @@ html {
 }
 
 header {
-	background: url(../img/headerphoto-4493-60.jpg) #49311c;
+  background: url(../img/headerphoto-4493-60.jpg) #49311c;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -218,19 +218,19 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
-  color:  #331111;
+  color: #331111;
 }
 
 label {
-	display: block;
-	text-align: center;
-	width: 100%;
-	color: #aa6644;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #aa6644;
 }
 
 input {
-	padding: 1.2444em;
-	color: #331111;
+  padding: 1.2444em;
+  color: #331111;
   box-sizing: border-box;
   width: 100%;
   font-family: inherit;
@@ -251,14 +251,14 @@ input[type="email"] {
   -webkit-appearance: none;
   -moz-box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
   -webkit-box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
-   box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
+  box-shadow: inset 0 0 0.4em rgba(170, 102, 68, 0.6);
 }
 
 input[type="submit"] {
- border: 0;
- font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
- background-color: rgba(170, 102, 68, 0.9);
-	-webkit-appearance: none;
+  border: 0;
+  font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
+  background-color: rgba(170, 102, 68, 0.9);
+  -webkit-appearance: none;
   -webkit-box-shadow: 0.05555em 0.05555em 0.05555em 0.025em #993311;
   box-shadow: 0.05555em 0.05555em 0.05555em 0.025em  #993311;
   -moz-box-shadow: 0.05555em 0.05555em 0.05555em 0.025em #993311;
@@ -271,7 +271,7 @@ input[type="submit"]:hover {
 }
 
 #register {
-	background-color: rgba(170, 102, 68, 0.3);
+  background-color: rgba(170, 102, 68, 0.3);
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -290,8 +290,8 @@ h2 {
 }
 
 h3 {
-	margin-top: 0.6222em; /* 14px @ 22.5px*/
-	padding-top: 0.6222em; /* 14px @ 22.5px*/
+  margin-top: 0.6222em; /* 14px @ 22.5px*/
+  padding-top: 0.6222em; /* 14px @ 22.5px*/
   padding-bottom: 0.6222em; /* 14px @ 22.5px*/
 }
 
@@ -304,13 +304,13 @@ h3 {
 }
 
 #register {
-	padding-bottom: 0.6222em;
-	border-radius: 0.444em; /*10px @ 22.5px*/
+  padding-bottom: 0.6222em;
+  border-radius: 0.444em; /*10px @ 22.5px*/
 }
 
 /* ===== STATE STYLES ===== */
 .hasjs input[type="submit"] {
-	transition: position 1s;
+  transition: position 1s;
   position: absolute;
   left: -444.44em; /* -10000px @ 22.5px */
 }
@@ -320,50 +320,53 @@ h3 {
 }
 
 .hasjs #input-email {
-	position: relative;
+  position: relative;
 }
 
 .hasjs #input-email label {
-	transition: top 0.3s;
-	top: 1.244em; /* 28px @ 22.5px*/
-	position: absolute;
+  transition: top 0.3s;
+  top: 1.244em; /* 28px @ 22.5px*/
+  position: absolute;
 }
 
 .hasjs #input-email label.email-active {
-	top: 0em;
+  top: 0;
 }
 
 .hasjs input[type="email"].email-active {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 .hasjs #thankyou-message {
-	font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
-	padding: 0 0.622em;
+  font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
+  padding: 0 0.622em;
   color: #331111;
   margin-top: 0.622em;
 }
 
-.hasjs #thankyou-message.FontBulge {
-	animation: FontBulge 1s 0s;
+.hasjs #thankyou-message.FontBounce {
+  animation: FontBounce 1s 0s;
   transform: scale(0.85);
 }
 
-@-webkit-keyframes FontBulge {
-  0% { 
-  transform: scale(1.1); opacity: 1 
+@keyframes FontBounce {
+  0% {
+    transform: scale(1.1);
+    opacity: 1;
   }
-  50% { 
-  transform: scale(1.6); opacity: .7; 
+  50% {
+    transform: scale(1.6);
+    opacity: 0.7;
   }
-  60% { 
-  transform: scale(0.6); opacity: 1 
+  60% {
+    transform: scale(0.6);
+    opacity: 1;
   }
-  80% { 
-  transform: scale(0.95) 
+  80% {
+    transform: scale(0.95);
   }
-  100% { 
-  transform: scale(0.85) 
+  100% {
+    transform: scale(0.85);
   }
 }
 
@@ -380,97 +383,72 @@ h3 {
   header {
     background: url(../img/headerphoto-4493-40.jpg) #49311c;
     -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
- 	  background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
 @media screen and (min-width: 53.3125em) {
 
   html {
-		font-size: 1.953em; /*35.156px @ 16px */
-		line-height: 2.4em; /*43px @ 18px */
-	}
-	
-	input {
-		padding: 1.2444em;
-		font-family: inherit;
-		font-size: inherit;
-		line-height: inherit;
-		text-align: inherit;
-	}
-}
-
-/* @media screen and (min-width: 64em) { */
-  /* 
-main {
-    margin: 1.909% 21.875%;
+    font-size: 1.953em; /*35.156px @ 16px */
+    line-height: 2.4em; /*43px @ 18px */
   }
 
-  h1 {
-    font-size: 3.25em; /*52px/16px */
- /* 
- }
-
-  footer {
-    text-align: center;
+  input {
+    padding: 1.2444em;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: inherit;
   }
 
-  form {
-    padding-top: 3.36em;
-    padding-bottom: 3.36em;
-  }
-
-  label {
-    font-size: 2.5em;
- */
-  /*40/16px*/
-  /* 
-  padding-bottom: 0.611em;
+  #register {
+    padding-bottom: 1.244em;
   }
 
   header {
-    margin-bottom: 3.356em;
-  }
-
-  input[type="search"] {
-    padding: 0.611em;
-    font-size: 1.2em;
+    background: url(../img/headerphoto-4493-10.jpg) #49311c;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   input[type="submit"] {
-    padding: 0.611em;
-    font-size: 1.2em;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0.05555em 0.05555em 0.05555em 0.055em #993311;
+    box-shadow: 0.05555em 0.05555em 0.05555em 0.055em  #993311;
+    -moz-box-shadow: 0.05555em 0.05555em 0.05555em 0.055em #993311;
   }
- */
-
-/* 
-  #country-label {
-    font-size: 1.8em;
-    padding-bottom: 0.611em;
-  }
-
-  #description {
-    font-size: 1.5em; /*24px/16px*/
-  /* 
 }
 
-  .info-label {
-    padding-bottom: 0.15275em;
+@media screen and (min-width: 130.75em) {
+
+  html {
+    font-size: 2.747em; /*54.9326px @ 18px */
+    line-height: 3.29em;
   }
 
-  .info {
-    padding-bottom: 0.4em;
+  main {
+    padding-left: 4.8em;
+    padding-right: 4.8em;
   }
- */
-  /* 
-.info-label, .info {
-    font-size: 1.5em; /*24px/16px*/
-  /* 
+
+  input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: inherit;
+  }
+
+  #register {
+    padding-bottom: 2.4em;
+  }
 }
-}
- */
+
 
 
