@@ -189,6 +189,7 @@ html {
   line-height: 1.22em; /*28px @ 18px */
   font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;
   text-align: center;
+  background: #fffbf8;
 }
 
 header {
@@ -230,6 +231,8 @@ input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-align: inherit;
+  background-color: #fffbf8;
   border: 0;
 }
 
@@ -237,6 +240,11 @@ input {
 form li {
   margin-bottom: 1.244em; /* 28px @ 22.5px*/
 }
+
+#register {
+	background-color: rgba(170, 102, 68, 0.3);
+}
+
 
 /* ===== LAYOUT STYLES ===== */
 header {
@@ -254,7 +262,7 @@ h2 {
 }
 
 h3 {
-	padding-top: 0.6222em; /* 14px @ 22.5px*/
+	margin-top: 0.6222em; /* 14px @ 22.5px*/
   padding-bottom: 0.6222em; /* 14px @ 22.5px*/
 }
 
@@ -264,6 +272,11 @@ h3 {
 
 #description {
   padding-bottom: 1.244em; /* 28px @ 22.5px*/
+}
+
+#register {
+	padding-bottom: 0.6222em;
+	border-radius: 0.444em; /*10px @ 22.5px*/
 }
 
 /* ===== STATE STYLES ===== */
