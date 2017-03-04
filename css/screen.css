@@ -328,22 +328,22 @@ h3 {
 }
 
 .hasjs #input-email label,
-#input-name label,
-#input-number label {
+.hasjs #input-name label,
+.hasjs #input-number label {
   transition: top 0.3s;
   top: 1.244em; /* 28px @ 22.5px*/
   position: absolute;
 }
 
 .hasjs #input-email label.email-active,
-#input-name label.email-active,
-#input-number label.email-active {
+.hasjs #input-name label.email-active,
+.hasjs #input-number label.email-active {
   top: 0;
 }
 
 .hasjs input[type="email"].email-active,
-input[type="text"].email-active,
-input[type="tel"].email-active {
+.hasjs input[type="text"].email-active,
+.hasjs input[type="tel"].email-active {
   box-shadow: none;
 }
 
