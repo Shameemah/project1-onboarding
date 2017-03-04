@@ -2,8 +2,35 @@ $.noConflict();
 
 // jQuery 3.x-style ready event and locally scoped $
 jQuery(function($) {
+
+ //email variables
+  var emailId = '#email';
+  var emailLabel = '#input-email label';
+  var typeEmail = 'input[type="email"]';
+  
+  //email variables
+  var nameId = '#name';
+  var nameLabel = '#input-name label';
+  var typeText = 'input[type="text"]';
+  
+  //email variables
+  var numberId = '#number';
+  var numberLabel = '#input-number label';
+  var typeTel = 'input[type="tel"]';
+  
+  
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
+  
+  //Function Calls
+  addClassFocus(emailId, emailLabel, typeEmail);
+  addClassFocus(nameId, nameLabel, typeText);
+  addClassFocus(numberId, numberLabel, typeTel);
+  addClassClick('h3', nameLabel, nameId);
+  removeClassBlur(emailId, emailLabel, typeEmail);
+  removeClassBlur(nameId, nameLabel, typeText);
+  removeClassBlur(numberId, numberLabel, typeTel);
+  resetForms();
   
   //validate input
   $('#email, #name').on('keyup focus blur', function() {
@@ -17,47 +44,6 @@ jQuery(function($) {
     }
   });
   
-  $('#email').on('focus', function() {
-    $('#input-email label').addClass('email-active');
-    $('input[type="email"]').addClass('email-active');
-  });
-  
-  $('#name').on('focus', function() {
-    $('#input-name label').addClass('email-active');
-    $('input[type="text"]').addClass('email-active');
-  });
-  
-  $('#number').on('click', function() {
-    $('#input-number label').addClass('email-active');
-    $('input[type="tel"]').focus();
-  });
-  
-  $('h3').on('click', function() {
-    $('#input-name label').addClass('email-active');
-    $('#name').focus();
-  });
-
-  $('#email').on('blur', function() {
-    if($('#email').val().length === 0) {
-      $('#input-email label').removeClass('email-active');
-      $('input[type="email"]').removeClass('email-active');
-    }
-  });
-  
-  $('#name').on('blur', function() {
-    if($('#name').val().length === 0) {
-      $('#input-name label').removeClass('email-active');
-      $('input[type="text"]').removeClass('email-active');
-    }
-  });
-  
-  $('#number').on('blur', function() {
-    if($('#number').val().length === 0) {
-      $('#input-number label').removeClass('email-active');
-      $('input[type="tel"]').removeClass('email-active');
-    }
-  });
-  
   //Form submit action
   $( "#register-form" ).submit(function( event ) {
     event.preventDefault();
@@ -65,9 +51,32 @@ jQuery(function($) {
     $("form").remove();
     thankYouMessage();
   });
+
+  //function for addCLass/focus
+  function addClassFocus(element, impactedElement, affectedElement) {
+    $(element).on('focus', function() {
+      $(impactedElement).addClass('email-active');
+      $(affectedElement).addClass('email-active');
+    });
+  }
   
-  //reset content when form is reloaded
-  resetForms();
+  //function for addClass/click
+  function addClassClick(element, impactedElement, affectedElement) {
+    $(element).on('click', function() {
+      $(impactedElement).addClass('email-active');
+      $(affectedElement).focus();
+    });
+  }
+  
+  //function for removeClass/blur
+  function removeClassBlur(element, impactedElement, affectedElement) {
+    $(element).on('blur', function() {
+      if($(element).val().length === 0) {
+        $(impactedElement).removeClass('email-active');
+        $(affectedElement).removeClass('email-active');
+      }
+    });
+  }
   
   //function to show thank you message to user
   function thankYouMessage() {
